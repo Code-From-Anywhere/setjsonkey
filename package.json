@@ -1,0 +1,30 @@
+{
+  "name": "updatejson",
+  "version": "1.0.2",
+  "description": "Update a JSON using the CLI",
+  "main": "build/index.js",
+  "source": "src/index.ts",
+  "bin": {
+    "updatejson": "build/index.js"
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "test": "node ./build/index.js",
+    "up": "npm version patch -f",
+    "pub": "yarn up && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-From-Anywhere/updatejson.git"
+  },
+  "author": "Wijnand Karsens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Code-From-Anywhere/updatejson/issues"
+  },
+  "homepage": "https://github.com/Code-From-Anywhere/updatejson#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "typescript": "^4.6.4"
+  }
+}

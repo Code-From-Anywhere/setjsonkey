@@ -1,6 +1,6 @@
 {
-  "name": "jsonupdate",
-  "version": "1.0.6",
+  "name": "updatemyjson",
+  "version": "1.0.7",
   "description": "Update a JSON using the CLI",
   "main": "build/index.js",
   "source": "src/index.ts",

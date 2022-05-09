@@ -1,6 +1,6 @@
 {
   "name": "updatejson",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Update a JSON using the CLI",
   "main": "build/index.js",
   "source": "src/index.ts",

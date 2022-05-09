@@ -1,11 +1,11 @@
 {
-  "name": "updatemyjson",
-  "version": "1.0.7",
+  "name": "setjsonkey",
+  "version": "1.0.8",
   "description": "Update a JSON using the CLI",
   "main": "build/index.js",
   "source": "src/index.ts",
   "bin": {
-    "updatejson": "build/index.js"
+    "setjsonkey": "build/index.js"
   },
   "scripts": {
     "dev": "tsc -w",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Code-From-Anywhere/updatejson.git"
+    "url": "git+https://github.com/Code-From-Anywhere/setjsonkey.git"
   },
   "author": "Wijnand Karsens",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Code-From-Anywhere/updatejson/issues"
+    "url": "https://github.com/Code-From-Anywhere/setjsonkey/issues"
   },
-  "homepage": "https://github.com/Code-From-Anywhere/updatejson#readme",
+  "homepage": "https://github.com/Code-From-Anywhere/setjsonkey#readme",
   "devDependencies": {
     "@types/node": "^17.0.31",
     "typescript": "^4.6.4"

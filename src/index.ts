@@ -3,7 +3,7 @@
 import fs from "fs";
 import path from "path";
 
-function set(path: string, value: string, object: any) {
+function set(path: string, value: string | number | boolean, object: any) {
   var schema = object; // a moving reference to internal objects within obj
   var pList = path.split(".");
   var len = pList.length;
@@ -76,8 +76,15 @@ if (typeof object !== "object") {
   object = {};
 }
 
+const realValue =
+  value === "true" || value === "false"
+    ? Boolean(value)
+    : !isNaN(Number(value))
+    ? Number(value)
+    : value;
+
 // UPDATE/SET JSON key
-set(keyLocation, value, object);
+set(keyLocation, realValue, object);
 
 fs.writeFileSync(absolutePath, JSON.stringify(object), { encoding: "utf8" });
 

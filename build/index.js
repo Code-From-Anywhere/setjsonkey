@@ -64,8 +64,13 @@ if (fileExists) {
 if (typeof object !== "object") {
     object = {};
 }
+const realValue = value === "true" || value === "false"
+    ? Boolean(value)
+    : !isNaN(Number(value))
+        ? Number(value)
+        : value;
 // UPDATE/SET JSON key
-set(keyLocation, value, object);
+set(keyLocation, realValue, object);
 fs_1.default.writeFileSync(absolutePath, JSON.stringify(object), { encoding: "utf8" });
 // console.log({ absolutePath, fileExists, object });
 console.log("succesfully changed your json!");
